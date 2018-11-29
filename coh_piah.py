@@ -85,7 +85,7 @@ def n_palavras_diferentes(lista_palavras):
     return len(freq)
 
 def compara_assinatura(as_a, as_b):
-    '''IMPLEMENTAR. Essa funcao recebe duas assinaturas de texto e deve devolver o grau de similaridade nas assinaturas.'''
+    '''Essa funcao recebe duas assinaturas de texto e deve devolver o grau de similaridade nas assinaturas.'''
     soma_a = 0
     soma_b = 0
     for i in as_a:
@@ -101,7 +101,7 @@ def compara_assinatura(as_a, as_b):
     return ass
 
 def calcula_assinatura(texto):
-    '''IMPLEMENTAR. Essa funcao recebe um texto e deve devolver a assinatura do texto.'''
+    '''Essa funcao recebe um texto e deve devolver a assinatura do texto.'''
     
     
     dados = []
@@ -114,7 +114,7 @@ def calcula_assinatura(texto):
     return dados
     
 def avalia_textos(textos, ass_cp):
-    '''IMPLEMENTAR. Essa funcao recebe uma lista de textos e deve devolver o numero (1 a n) do texto com maior probabilidade de ter sido infectado por COH-PIAH.'''
+    '''Essa funcao recebe uma lista de textos e deve devolver o numero (1 a n) do texto com maior probabilidade de ter sido infectado por COH-PIAH.'''
     i = len(textos) -1
     tex = 0
     lista = []
@@ -132,7 +132,7 @@ def avalia_textos(textos, ass_cp):
 
 
 def tamanho_medio_palavras(texto):
-   
+   '''Essa função recebe um texto e devolve o tamanho medio de palavras'''
     letras = 0
     
     frases = string(separa_frases(string(separa_sentencas(texto))))
@@ -148,6 +148,7 @@ def tamanho_medio_palavras(texto):
     return media
     
 def type_token(texto):
+    ''' Essa funçao recebe um texto e devolve Type_Token do texto'''
 
     frases = string(separa_frases(string(separa_sentencas(texto))))
     palavras = 0
@@ -164,6 +165,7 @@ def type_token(texto):
     return media
 
 def rh_legomana(texto):
+    ''' Essa funçao recebe um texto e devolve RH Legomana do texto'''
 
     frases = string(separa_frases(string(separa_sentencas(texto))))
     palavras = 0
@@ -177,7 +179,7 @@ def rh_legomana(texto):
     return media
 
 def tamanho_medio_sentenca(texto):   
-    
+    ''' Essa funçao recebe um texto e devolve o tamanho medio de sentença do texto'''
     caracteres = 0
     sentencas = 0
     
@@ -196,6 +198,7 @@ def tamanho_medio_sentenca(texto):
     return media
  
 def complexidade_sentenca(texto):
+    ''' Essa funçao recebe um texto e devolve a complexidade de sentença do texto'''
 
     sentencas = str(separa_sentencas(texto)).strip('[]')
     numero_frases = len(separa_frases(sentencas))
@@ -208,7 +211,8 @@ def complexidade_sentenca(texto):
     return media
 
 def tamanho_medio_frase(texto):
-
+    ''' Essa funçao recebe um texto e devolve o tamanho medio de frase do texto'''
+    
     letras = 0
     sentencas = str(separa_sentencas(texto)).strip('[]')
     numero_frases = len(separa_frases(sentencas))
@@ -234,16 +238,3 @@ def string(func):
         
     return s.strip("[]")
     
-#print(rh_legomana("O gato caçava o rato"))
-
-#print(calcula_assinatura("Voltei-me para ela; Capitu tinha os olhos no chão. Ergueu-os logo, devagar, e ficamos a olhar um para o outro... Confissão de crianças, tu valias bem duas ou três páginas, mas quero ser poupado. Em verdade, não falamos nada; o muro falou por nós. Não nos movemos, as mãos é que se estenderam pouco a pouco, todas quatro, pegando-se, apertando-se, fundindo-se. Não marquei a hora exata daquele gesto. Devia tê-la marcado; sinto a falta de uma nota escrita naquela mesma noite, e que eu poria aqui com os erros de ortografia que trouxesse, mas não traria nenhum, tal era a diferença entre o estudante e o adolescente. Conhecia as regras do escrever, sem suspeitar as do amar; tinha orgias de latim e era virgem de mulheres."))
-
-#print(compara_assinatura("a","b"))
-
-print(calcula_assinatura('Navegadores antigos tinham uma frase gloriosa:"Navegar é preciso; viver não é preciso".Quero para mim o espírito [d]esta frase,transformada a forma para a casar como eu sou:Viver não é necessário; o que é necessário é criar.Não conto gozar a minha vida; nem em gozá-la penso.Só quero torná-la grande,ainda que para isso tenha de ser o meu corpo e a (minha alma) a lenha desse fogo.Só quero torná-la de toda a humanidade;ainda que para isso tenha de a perder como minha.Cada vez mais assim penso.Cada vez mais ponho da essência anímica do meu sangueo propósito impessoal de engrandecer a pátria e contribuirpara a evolução da humanidade.É a forma que em mim tomou o misticismo da nossa Raça.'))
-
-
-
-#print(calcula_assinatura("Muito além, nos confins inexplorados da região mais brega da Borda Ocidental desta Galáxia, há um pequeno sol amarelo e esquecido. Girando em torno deste sol, a uma distancia de cerca de 148 milhões de quilômetros, há um planetinha verde-azulado absolutamente insignificante, cujas formas de vida, descendentes de primatas, são tão extraordinariamente primitivas que ainda acham que relógios digitais são uma grande ideia."))
-
-#__main__()
