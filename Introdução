@@ -1,0 +1,25 @@
+John é monitor na matéria de Introdução à Produção Textual I na Penn State University (PSU). Durante esse período, 
+John descobriu que uma epidemia de COH-PIAH estava se espalhando pela PSU. 
+Essa doença rara e altamente contagiosa faz com que as pessoas contaminadas produzam textos extremamente semelhantes de forma involuntária.
+Após a entrega da primeira redação, John desconfiou que alguns alunos estavam sofrendo de COH-PIAH. 
+John, se preocupando com a saúde da turma, resolveu buscar um método para identificar os casos de COH-PIAH. 
+Para isso, ele necessita da sua ajuda para desenvolver um programa que o auxilie a identificar os alunos contaminados.
+
+Detecção de autoria
+
+Utilizando diferentes estatísticas do texto, é possível identificar aspectos que funcionam como uma “assinatura” do autor. 
+Diferentes pessoas possuem diferentes estilos de escrita, algumas preferindo sentenças mais curtas,outras preferindo sentenças mais longas.
+
+Essas “assinatura” pode ser utilizada para detecção de plágio, evidência forense, ou nesse caso, 
+para detectar a grave doença COH-PIAH.
+
+Traços linguísticos
+
+Nesse exercício utilizaremos as seguintes estatísticas para detectar a doença:
+
+Tamanho médio de palavra: Média simples do número de caracteres por palavra.
+Relação Type-Token: Número de palavras diferentes utilizadas em um texto divididas pelo total de palavras.
+Razão Hapax Legomana: Número de palavras utilizadas uma vez dividido pelo número total de palavras.
+Tamanho médio de sentença: Média simples do número de caracteres por sentença.
+Complexidade de sentença: Média simples do número de frases por sentença.
+Tamanho médio de frase: Média simples do número de caracteres por frase.
